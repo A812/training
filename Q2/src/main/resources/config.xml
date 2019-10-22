@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+	<!-- bean definitions here -->
+
+	<bean id="details" class="com.ak.Question">
+		<property name="questionId" value="1" />
+		<property name="question" value="what is java" />
+		<property name="answer1">
+			<list>
+				<value>programming language</value>
+			</list>
+		</property>
+
+		<property name="answer2">
+			<set>
+				<value>
+					language for programming
+				</value>
+			</set>
+
+		</property>
+
+		<property name="answer3">
+			<map>
+				<entry key="001" value="prg Language" />
+			</map>
+		</property>
+	</bean>
+
+</beans>	
